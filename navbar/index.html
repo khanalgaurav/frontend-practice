@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/385dffd57a.js" crossorigin="anonymous"></script>
+    <title>nav bar</title>
+</head>
+<body>
+    <div class="main">
+        <nav class="navigation" >
+            <div class="logo">
+                <img src="/img/logo.png" alt="">
+                <a onclick="showmenu()"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="nav-links" id="navigation">
+                <div class="links">
+                    <!-- <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul> -->
+                    <a onclick="hidemenu()"><i class="fa-solid fa-circle-xmark"></i></a>
+                    <button class="link" onclick="gotolink(this)" value="index.html">Home</button>
+                    <button class="link" onclick="gotolink(this)" value="#hiw ">How it works</button>
+                    <button class="link" onclick="gotolink(this)" value="#about">About</button>
+                    <button class="link" onclick="gotolink(this)" value="#feature">Features</button>
+                    <button class="link" onclick="gotolink(this)" value="#faq">FAQ</button>
+                    <button class="link" onclick="gotolink(this)" value="#testimonials">Testimonials</button>
+                    
+                </div>
+                <div class="login">
+                    <button class="login-button" onclick="show()" value="login.html">Login</button>
+                    <button class="start-button">Get Started</button>
+                </div>
+            </div>
+
+    
+        </nav>
+        <!-- <div class="size"> -->
+            <div class="login-main active" id="login-main">
+                <div class="text">
+                    <div class="cross-add">
+                        <h2>Create an account</h2>
+                        <a onclick="hide()"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <p>Enter your email below to create an account</p>
+                </div>
+                <div class="alternate-option">
+                    <a href="#"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;Github</a>
+                    <a href="#"><i class="fa-brands fa-google"></i>&nbsp;&nbsp;Google</a>
+                </div>
+                <div class="formdiv">
+                    <form class="form">
+                        <fieldset>
+                            <legend class="legend">OR CONTINUE WITH</legend>
+                            <div>
+                                
+                                <label for="mail">Email</label><br>
+                                <input type="email" placeholder="m@example.com" name="mail">
+                            </div>
+                            <div>
+                                <label for="passcode">Password</label><br>
+                                <input type="password" name="passcode">
+                                
+                            </div>
+                            <input type="submit" class="submit-button" value="Create account">
+                        </fieldset>
+                    </form>
+                </div>
+                
+            </div>
+        <!-- </div> -->
+        <div class="body-center">   
+            <div class="body-text" id="home">
+                <img src="/img/logo.png" alt="">
+                <h1>home</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus illo vel corrupti, fugit voluptatibus quam voluptatum rerum eligendi aliquam itaque consectetur eveniet numquam sit minus sed eaque suscipit amet dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt soluta temporibus modi illum deleniti, consequuntur corporis exercitationem explicabo sit, ipsam hic adipisci obcaecati, impedit voluptatibus ducimus architecto tenetur pariatur.</p>
+            </div>
+
+            <div class="body-text" id="hiw">
+                <img src="/img/logo.png" alt="">
+                <h1>How it works</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus illo vel corrupti, fugit voluptatibus quam voluptatum rerum eligendi aliquam itaque consectetur eveniet numquam sit minus sed eaque suscipit amet dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt soluta temporibus modi illum deleniti, consequuntur corporis exercitationem explicabo sit, ipsam hic adipisci obcaecati, impedit voluptatibus ducimus architecto tenetur pariatur.</p>
+            </div>
+
+            <div class="body-text" id="about">
+                <img src="/img/logo.png" alt="">
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus illo vel corrupti, fugit voluptatibus quam voluptatum rerum eligendi aliquam itaque consectetur eveniet numquam sit minus sed eaque suscipit amet dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt soluta temporibus modi illum deleniti, consequuntur corporis exercitationem explicabo sit, ipsam hic adipisci obcaecati, impedit voluptatibus ducimus architecto tenetur pariatur.</p>
+            </div>
+
+            <div class="body-text" id="feature">
+                <h1>Features</h1>
+                <img src="/img/logo.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus illo vel corrupti, fugit voluptatibus quam voluptatum rerum eligendi aliquam itaque consectetur eveniet numquam sit minus sed eaque suscipit amet dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt soluta temporibus modi illum deleniti, consequuntur corporis exercitationem explicabo sit, ipsam hic adipisci obcaecati, impedit voluptatibus ducimus architecto tenetur pariatur.</p>
+            </div>
+
+            <div class="body-text" id="faq">
+                <h1>FAQ</h1>
+                <img src="/img/logo.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus illo vel corrupti, fugit voluptatibus quam voluptatum rerum eligendi aliquam itaque consectetur eveniet numquam sit minus sed eaque suscipit amet dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt soluta temporibus modi illum deleniti, consequuntur corporis exercitationem explicabo sit, ipsam hic adipisci obcaecati, impedit voluptatibus ducimus architecto tenetur pariatur.</p>
+            </div>
+
+            <div class="body-text" id="testimonials">
+                <h1>Testimonials</h1>
+                <img src="/img/logo.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus illo vel corrupti, fugit voluptatibus quam voluptatum rerum eligendi aliquam itaque consectetur eveniet numquam sit minus sed eaque suscipit amet dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt soluta temporibus modi illum deleniti, consequuntur corporis exercitationem explicabo sit, ipsam hic adipisci obcaecati, impedit voluptatibus ducimus architecto tenetur pariatur.</p>
+            </div>
+
+            
+        </div> 
+
+    </div>
+    <div id="overlay" class="active"></div>
+</body>
+</html>
