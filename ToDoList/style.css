@@ -7,15 +7,18 @@
 .container{
     height: 100vh;
     width: 100%;
+    
 }
-.container .black{
+.container .overlay{
+    background: linear-gradient(225deg, #5596FF 0%, #AC2DEB);
     height: 50%;
     width: 100%;
     object-position: center;
     object-fit: cover;
     position: relative;
     z-index: 1;
-    opacity: .5;
+    opacity: .6;
+
 }
 .container .background{
     position:absolute;
@@ -40,7 +43,7 @@
     top: 10%;
     left: 50%;
     transform: translate(-50%,0);
-    border: 1px solid red;
+    /* border: 1px solid red; */
     
 }
 .todo-add-task{
@@ -73,17 +76,14 @@
     color: white;
 
 }
-.task-list{
-    background-color: white;
-    border-radius: 5px;
 
-}
 ul{
     /* background: white; */
-    width: fit-content;
+    width: 100%;
     height: fit-content;
 }
 ul li{
+
     padding: 15px 10px 15px 60px;
     border-bottom: 2px solid #E3E4F1;
     text-decoration: none;
@@ -119,23 +119,44 @@ ul li.checked::before{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.container{
-    position: relative;
-}
-.foot{
-    background-color: #fff;
+
+
+.list-wrapper .foot{
+    background-color: transparent;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
     padding: 10px;
-    border: 1px solid black;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     top: 100%;
 }
 .status{
     display: flex;
     gap: 19px;
+}
+.list-wrapper{
+    border: 1px solid red;
+    background: white;
+}
+ul li{
+    position: relative;
+}
+ul li span{
+    position: absolute;
+    top:50%;
+    right: 10px;
+    transform: translate(0,-50%);
+    font-size: 30px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: black;
+}
+ul li span:hover{
+    background-color: #E3E4F1;
+    color: red;
 }
