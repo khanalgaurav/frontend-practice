@@ -72,7 +72,7 @@
     font-size: 16px;
 }
 .todo-add-task button:hover{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
 
 }
@@ -159,4 +159,40 @@ ul li span{
 ul li span:hover{
     background-color: #E3E4F1;
     color: red;
+}
+@media(max-width:700px){
+
+    .container .overlay{
+        height: 30%;
+    }
+    .container .background{
+        height: 30%;
+    }
+    .todo-task{
+        top: 5%;
+    }
+    .todo-add-task #input-box{
+        font-size: 14px;
+
+    }
+    .status{
+        gap:6px;
+    }
+}
+@media(min-width:2000px){
+    .todo-add-task button{
+        padding: 18px 70px;
+        font-size: 36px;
+    }
+
+    .todo-task{
+        font-size: 40px;
+        top: 25%;
+    }
+    .todo-add-task input{
+        font-size: 50px;
+    }
+    .list-wrapper .foot{
+        font-size: 24px;
+    }
 }

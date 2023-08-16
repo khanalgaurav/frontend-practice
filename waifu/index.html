@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waifu</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        background: #393A4B;
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: fit-content;
+        text-align: center;
+        /* border: 1px solid red; */
+    }
+    .container button{
+        padding:14px 16px ;
+        background-color: #3B82F6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    .image img{
+        height: 500px;
+        width:500px;
+        display: none;
+        border-radius: 20px;
+    }
+    .image{
+        margin-bottom: 10px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="image">
+            <img id="img">
+        </div>
+        <button onclick="randomWaifu()">Give me waifu</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
